@@ -1,0 +1,39 @@
+<!-- Halaman Web Berisi Gambar, memiliki 2 tombol (Zoom In dan Zoom Out) 
+event = jika di zoom out height : 100 width = 100
+event = jika di zoom in height : 150 width : 150
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<img id="gambar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeX3gg6jdrAuvWeScKJ5H1L0vmh2NzbNRJ6g&usqp=CAU" width="100" height="100">
+<br/>
+
+<button id="zoomOut" onclick="fZoomOut()">Zoom Out</button>
+<button id="zoomIn" onclick="fZoomIn()">Zoom In</button>
+
+<script>
+
+const oGambar = document.getElementById("gambar");
+oGambar.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeX3gg6jdrAuvWeScKJ5H1L0vmh2NzbNRJ6g&usqp=CAU";
+
+function fZoomOut(){
+    oGambar.width = "100";
+    oGambar.height = "100";
+	// alert("fZoomOut")
+}
+
+function fZoomIn(){
+    oGambar.width = "150";
+    oGambar.height = "150";
+	// alert("fZoomIn")
+}
+
+</script>
+
+<p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="biodata" method="post" action="/action_page.php" onsubmit="return validateForm()">
+  <input type="text" name="nm_siswa" placeholder="Nama Siswa">
+  <br/>
+  <br/>
+  <input type="submit" value="Kirim">
+</form>
+
+<script>
+	function validateForm(){
+    	let x = document.forms["biodata"]["nm_siswa"].value;
+    	alert("OK "+x)
+    	return (x != "")
+    }
+</script>
+
+</body>
+</html>
